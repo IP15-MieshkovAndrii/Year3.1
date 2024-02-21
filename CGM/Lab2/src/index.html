@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 2</title>
+    <script src="script2.js" defer></script>
+    <style>
+        canvas {
+            border: 1px solid black;
+            width: 560px;
+            height: 560px;
+        }
+        div {
+            margin: 10px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        
+        select {
+            padding: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drawing with mouse events</h1>
+    <canvas id="myPics" width="560" height="560"></canvas>
+    <div>
+        <button id="clearButton">Clear Canvas</button>
+        <label for="colorSelect">Select Color: </label>
+        <select id="colorSelect">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+    </div>
+    <div>
+        <button id="pointMode">Point Mode</button>
+        <button id="triangleMode">Triangle Mode</button>
+        <button id="circleMode">Circle Mode</button>
+    </div>
+</body>
+</html>
